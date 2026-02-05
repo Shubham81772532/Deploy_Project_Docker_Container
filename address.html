@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .Address {
+        border: 2px outset rgb(219, 205, 205);
+        background-color: hsl(185, 53%, 87%);
+        width: 500px;
+        transform-origin: 1%;
+        justify-self: center;
+        border-radius: 6px;
+        padding:20px;
+        padding-left: 10px ;
+        background: #fff;
+        box-shadow: 0 10px 2s0px rgba(0, 0, 0, 0.15);
+        box-sizing: border-box;  
+        display: flex;
+    }
+
+    .input_text input 
+    {
+        width: 75%;
+        height: 60px;
+        border: 1px solid #DADAF2;
+        border-radius: 6px;
+        background: #F8F8FB;
+        padding: 0px 20px;
+        margin-bottom: 10px;
+        transition: 0.2s ease;
+        text-align: left;
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+</style>
+
+<body>
+    <div class="Address">
+        <form>
+            <div class="left_columns">
+                <input type="text" name="Name" placeholder="Full Name" autofocus required>
+            </div>
+            <div class="Right_columns">
+                <input type="text" name="Mobile_Number" pattern="[0-9]{10}" placeholder="10-digit Mobile_Number"
+                    autofocus required>
+            </div>
+
+            <div class="left_columns">
+                <input type="pincode" name="pincode" maxlength="6" placeholder=" pincode" autofocus required>
+            </div>
+
+            <div class="Right_columns">
+                <input type="text" name="Locality" placeholder=" Locality " autofocus required>
+            </div>
+
+            <div class="input_address">
+                <input type="text" name="Address" size="40" placeholder="House No,Building Name" autofocus required>
+
+            </div>
+            
+            <div>
+                <input type="text" name="city" size="20" placeholder=" city" autofocus required>
+                <select id="State" name="State" size="1">
+                    <optgroup>
+                        <option value="select">---state---</option>
+                        <option value="">Maharashtra</option>
+                        <option value="A+">Gujarat</option>
+                        <option value="A+">Delhi</option>
+                        <option value="A+">Goa</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="input_pincode">
+                <input type="text" name="Landmark" placeholder=" Landmark(optional)" autofocus>
+                <input type="text" name="Mobile_Number" pattern="[0-9]{10}" placeholder="10-digit Mobile_Number">
+            </div>
+
+            <div class="Address_type">
+                <input type="radio" name="Address_type" value="Home" required>Home
+                <input type="radio" name="Address_type" value="Work" required>Work
+            </div>
+
+            <button type="submit" value="submit"><a href="#"></a>Save</button>
+            <button type="reset" value="reset">Cancel</button>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

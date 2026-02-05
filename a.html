@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .Address {
+            border: 2px outset rgb(219, 205, 205);
+            background-color: hsl(185, 53%, 87%);
+            width: 600px;
+            transform-origin: 1%;
+            border-radius: 6px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+            width: 100%;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input_text input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid #DADAF2;
+            border-radius: 6px;
+            background: #F8F8FB;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            transition: 0.2s ease;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        select,
+        input[type="radio"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+            border-radius: 6px;
+            border: 1px solid #DADAF2;
+            text-align: left;
+        }
+
+        button {
+            width: 48%;
+            height: 40px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        .Address_type {
+            grid-column: span 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .Address_type input {
+            width: auto;
+        }
+
+        .input_text input:focus {
+            outline: none;
+            border: 1px solid #4CAF50;
+        }
+
+        select:focus {
+            outline: none;
+            border: 1px solid #4CAF50;
+        }
+
+        .Address button:hover {
+            background-color: #45a049;
+        }
+
+        .Address button[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Address">
+        <form>
+            <!-- Left Column -->
+            <div class="form-group">
+                <input type="text" name="Name" placeholder="Full Name" autofocus required>
+                <input type="text" name="Mobile_Number" pattern="[0-9]{10}" placeholder="10-digit Mobile Number" autofocus required>
+                <input type="text" name="pincode" maxlength="6" placeholder="Pincode" autofocus required>
+                <input type="text" name="Locality" placeholder="Locality" autofocus required>
+            </div>
+
+            <!-- Right Column -->
+            <div class="form-group">
+                <input type="text" name="Address" placeholder="House No, Building Name" autofocus required>
+                <input type="text" name="city" placeholder="City" autofocus required>
+                <select id="State" name="State">
+                    <option value="select">---State---</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa">Goa</option>
+                </select>
+            </div>
+
+            <!-- Full-width Fields -->
+            <div class="form-group">
+                <input type="text" name="Landmark" placeholder="Landmark (optional)" autofocus>
+                <input type="text" name="Mobile_Number" pattern="[0-9]{10}" placeholder="Alternate Mobile Number">
+            </div>
+
+            <!-- Address Type (Full-width) -->
+            <div class="Address_type">
+                <label><input type="radio" name="Address_type" value="Home" required>Home</label>
+                <label><input type="radio" name="Address_type" value="Work" required>Work</label>
+            </div>
+
+            <!-- Buttons -->
+            <button type="submit">Save</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </div>
+</body>
+
+</html>

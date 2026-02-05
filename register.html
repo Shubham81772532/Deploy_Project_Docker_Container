@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_up</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+        background-image: url("background.gif");
+        background-color: #cccccc;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .form_sign 
+    {
+        border: 4px outset rgb(78, 149, 200);
+        background-color: hsl(180, 11%, 93%);
+        width: 500px;
+        transform-origin: 3%;
+        justify-self: center;
+        border-radius: 10px;
+        padding: 20px 20px;
+        background: #fff;
+        box-shadow: 0 10px 2s0px rgba(0, 0, 0, 0.15);
+    }
+
+    .form_sign h3 {
+        font-size: 20px;
+        text-align: center;
+        color: #1f93a8;
+    }
+
+    .input_text input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        text-align: left;
+
+    }
+
+    form .input_text {
+        position: relative;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        text-align: center;
+        color: #ffffff;
+        background: #d74ed3;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-bottom: 28px;
+        transition: 0.3s ease;
+    }
+
+    button:hover {
+        background: #a329cb;
+
+    }
+</style>
+
+<body >
+    <div class=form_sign>
+
+        <form>
+            <h3>sign_up</h3>
+            <div class=input_text>
+                <label for="First">First_name:</label>
+                <input type="text" name="Fname" id="Fname" placeholder="Enter First name" required>
+            </div>
+            <div class=input_text>
+                <label for="Middle">Middle_name:</label>
+                <input type="text" name="Mname"id="Mname" placeholder="Enter Middle name" required>
+            </div>
+            <div class=input_text>
+                <label for="Last">Last_name:</label>
+                <input type="text" name="Lname" id="Lname" placeholder="Enter Last name" required>
+            </div>
+            <div class=input_text>
+                <label for="Mobile">Mobile:</label>
+                <input type="text" name="Mobile" id="Mobile" placeholder="Enter Mobile number" pattern="[0-9]{10}" required>
+            </div>
+            <div class=input_text>
+                <label for="Email">Email:</label>
+                <input type="Email" name="Email" id="Email" placeholder="Enter Email " required>
+            </div>
+            <div class="input_text">
+                <label for="Password">Password:</label>
+                <input type="password" name="pwd" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            </div>
+
+            <button type="submit" value="submit"><a href="register.html"></a>submit</button>
+
+        </form>
+        </form>
+    </div>
+</body>
+
+</html>

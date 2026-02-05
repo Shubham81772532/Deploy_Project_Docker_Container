@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg.jpg");
+            background-size: cover;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        
+        .register a{
+            background-color: rgb(77, 77, 220);
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: wheat;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+            color: white;
+        }
+        .h-txt h1{
+            font-size: 3.5em;
+            color: white;
+        }
+        .h-txt a{
+            background-color: rgb(77, 77, 220);
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            letter-spacing: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <div class="logo">
+                Go Safari
+            </div>
+
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">Hills Station</a>
+                <a href="">Best Offer's</a>
+                <a href="">Our Sites</a>
+                <a href="">Contact</a>
+
+            </div>
+
+            <div class="register">
+                <a href="Register.html">Register</a>
+            </div>
+        </nav>
+
+
+        <section class="h-txt">
+            <span><B>Enjoy</B></span>
+            <h1><b>Travel World with SK07</b></h1>
+            <br>
+            <a href=""> Book your Trip</a>
+        </section>
+
+    </header>
+    
+</body>
+</html>

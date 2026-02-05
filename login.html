@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login form</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  body 
+  {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10px;
+    display: flex;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .myDiv {
+    border: 2px outset rgb(219, 205, 205);
+    background-color: hsl(185, 53%, 87%);
+    width: 500px;
+    transform-origin: 1%;
+    justify-self: center;
+    border-radius: 6px;
+    padding: 20px 20px;
+    background: #fff;
+    box-shadow: 0 10px 2s0px rgba(0, 0, 0, 0.15);
+  }
+
+
+  .myDiv h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .input_box input {
+    width: 75%;
+    height: 60px;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    outline: solid;
+    background: #F8F8FB;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+    text-align: left;
+  }
+
+  form .input_box input:focus {
+    border-color: #626cd6;
+  }
+
+  form .input_box .password_title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  form .input_box {
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: #626cd6;
+    font-weight: 500;
+  }
+
+
+
+  .myDiv p {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .myDiv .separator {
+    position: relative;
+    margin-bottom: 24px;
+  }
+
+  .myDiv .separator span {
+    background: #fff;
+    z-index: 1;
+    padding: 0 10px;
+    position: relative;
+  }
+
+  .myDiv .separator::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background: #C2C2C2;
+    display: block;
+  }
+
+  form .input_box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  form .input_box input {
+    width: 100%;
+    height: 57px;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    outline: none;
+    background: #F8F8FB;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+  }
+
+  form .input_box input:focus {
+    border-color: #67b2cb;
+  }
+
+  form .input_box .password_title {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  form .input_box {
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: #626cd6;
+    font-weight: 500;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  button {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #626CD6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: 0.3s ease;
+  }
+
+  button:hover {
+    background: #4954d0;
+  }
+
+
+  form h5 {
+    text-align: center;
+  }
+
+  .login_option {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login_option .option {
+    width: calc(100% / 2 - 12px);
+  }
+
+  .login_option .option a {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #F8F8FB;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    margin: 14px 0 14px 0;
+    text-decoration: none;
+    color: #171645;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+
+  .myDiv .login_option .option a:hover {
+    background: #ededf5;
+    border-color: #626cd6;
+  }
+
+  .myDiv .login_option .option a img {
+    max-width: 25px;
+  }
+</style>
+
+<body>
+  <div class="myDiv">
+    <form>
+      <h3> Login </h3>
+
+      <div class="input_box">
+        <label for="Emailandphone">
+          <br> Email or mobile number
+        </label>
+        <input type="text" id="Uname" placeholder="Enter the Username" size="15" autofocus required>
+      </div>
+
+      <div class="input_box">
+        <div class="password_title">
+          <label for="password">Password</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+
+      <button type="submit" value="Login">Log in</button>
+      <p class="sign_up">Don't have an account? <a href="register.html">Sign up</a></p>
+
+      <p class="separator">
+        <span>or</span>
+      </p>
+
+      <div class="login_option">
+        <!-- Google button -->
+        <div class="option">
+          <a href="#">
+            <img src="google.png" alt="Google" />
+            <span>Google</span>
+          </a>
+        </div>
+
+        <div class="option">
+          <a href="#">
+            <img src="facebook.png" alt="Facebook" />
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+
+    </form>
+
+  </div>
+</body>
+
+</html>

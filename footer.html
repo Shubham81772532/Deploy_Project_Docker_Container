@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            color: white;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .header {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header a {
+            font-size: 18px;
+            font-weight: 400;
+            color: black;
+            background-color: rgb(255, 255, 255);
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .header a:hover {
+            color: rgb(114, 239, 222);
+            background-color: rgb(14, 13, 13);
+        }
+
+        .sign a {
+            font-size: 18px;
+            font-weight: 400;
+            color: black;
+            background-color: rgb(255, 255, 255);
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .sign a:hover {
+            color: rgb(114, 239, 222);
+            background-color: rgb(14, 13, 13);
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            color: white;
+            background-color: rgb(59, 45, 62);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        footer a {
+            color: rgb(114, 239, 222);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="header">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="sign">
+            <a href="login.html">Sign Up</a>
+        </div>
+    </nav>
+
+    <footer>
+        <p>Author: Hege Refsnes<br>
+            <a href="mailto:hege@example.com">hege@example.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>
